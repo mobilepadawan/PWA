@@ -1,8 +1,8 @@
 # PWA
 ## TASK-IT!
 
-This application contains the main characteristics that a PWA should have.
-In this very basic sample, you will find:
+This very basic PWA sample contains the main characteristics a Progressive Web App should have.
+Into this code you will find:
 * manifest.json
 * Service Worker
 * Cache Storage
