@@ -1,0 +1,41 @@
+{
+    "short_name": "T@ask-it!",
+    "name": "T@ask-it!: Just Another Tasks Application",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "/index.html",
+    "icons": [
+        {
+        "src": "images/taskit-icon-64.png",
+        "type": "image/png",
+        "sizes": "64x64",
+        "purpose": "maskable"
+        },
+        {
+        "src": "images/taskit-icon-96.png",
+        "type": "image/png",
+        "sizes": "96x96",
+        "purpose": "maskable"
+        },
+        {
+        "src": "images/taskit-icon-128.png",
+        "type": "image/png",
+        "sizes": "128x128",
+        "purpose": "maskable"
+        },
+        {
+        "src": "images/taskit-icon-144.png",
+        "type": "image/png",
+        "sizes": "144x144",
+        "purpose": "maskable"
+        },
+        {
+        "src": "images/taskit-icon-512.png",
+        "type":"image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+        }
+    ]
+}
