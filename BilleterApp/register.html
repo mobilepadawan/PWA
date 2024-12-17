@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BilleterApp - Registrarme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/wallet-512.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <main>
+        <div class="main-register">
+            <h2>Registrarme</h2>
+            <form action="#" method="post" autocomplete="off">
+                <label for="inputNombre">Nombre completo</label>
+                <input type="text" 
+                       id="inputNombre" 
+                       placeholder="Nombre(s)" 
+                       required >
+                <input type="text" 
+                       id="inputApellido" 
+                       placeholder="Apellido(s)" 
+                       required >
+                <label for="inputEmail">Email</label>
+                <input type="email" 
+                       id="inputEmail" 
+                       placeholder="usuario@email.com" 
+                       required >
+                <label for="inputEmail">Contraseña</label>
+                <input type="password" 
+                       id="inputPwd" 
+                       placeholder="Contraseña" 
+                       required >
+                <div class="terms">
+                    <input type="checkbox" 
+                           id="inputTerms" required>
+                    <label for="inputTerms">Acepta los Términos y Condiciones.</label>
+                </div>
+                <button type="submit" 
+                        id="btnLogin">
+                        Continuar
+                </button>
+            </form>
+            <div class="bottom-messages">
+                <div><p>¿Ya tienes una cuenta?</p></div>
+                <div>
+                    <a href="index.html" 
+                       target="_self">
+                       <p>Ver a iniciar sesión</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

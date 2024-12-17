@@ -1,0 +1,35 @@
+{
+    "ope": 1734001176704,
+    "tokenId": "3112656e-cbf3-4c88-abb6-318b2a14fb46",
+    "details": {
+        "comments": "// 1734001767360 > new Date(1734001767360).toLocaleString()",
+        "name": "Transferencia entre cuentas",
+        "from": "usuarioemisor@email.com",
+        "to": "usuarioreceptor@email.com",
+        "date": "1734001767360",
+        "currency": "ARS",
+        "amount": 1478964.00
+    }
+}
+{
+    "ope": 1734001194512,
+    "tokenId": "3112656e-cbf3-4c88-abb6-818f6a14fb88",
+    "details": {
+        "name": "Pago de servicio",
+        "serviceName": "videocable + internet",
+        "currency": "ARS",
+        "amount": 21284.00,
+        "date": ""
+    }
+}
+{
+    "ope": 1734001238133,
+    "tokenId": "8816782e-ebf6-8e22-abb1-B10f4e91fb37",
+    "details": {
+        "name": "Pago mediante QR",
+        "serviceName": "",
+        "currency": "ARS",
+        "amount": 55618.00,
+        "date": ""
+    }
+}

@@ -1,0 +1,99 @@
+@import url('/css/varsandgeneral.css');
+
+main {
+    user-select: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div.main-balance {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & div.button {
+            cursor: pointer;
+            width: 120px;
+            height: 20px;
+            padding: 10px;
+            border: 0;
+            background-color: var(--color-fondo);
+            color: var(--texto-primario);
+            margin-bottom: 30px;
+            margin-left: -40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            
+            & img {
+                width: 20px;
+                filter: brightness(133%);
+            }
+        }
+
+        & hr {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: var(--texto-terciario);
+        }
+    
+        & h2 {
+            margin-top: -10px;
+            margin-bottom: 20px;
+            color: var(--texto-normal);
+        }
+    
+        p {
+            color: var(--texto-normal);
+            margin-bottom: 30px;
+        }
+
+        & span#span-income {
+            color: var(--money-color-positive);
+        }
+
+        & span#span-outcome {
+            color: var(--money-color-negative);
+        }
+
+        & div.cake-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        
+            & .donut {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background: conic-gradient(
+                    var(--money-color-positive) 0deg 340deg,
+                    var(--money-color-negative) 340deg 358deg
+                );
+                box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+                rotate: 20deg;
+        
+                /* background-color: var(--money-color-positive);
+                box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); */
+            }
+            
+            & .hole {
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                width: 60%;
+                height: 60%;
+                background-color: #f0f0f0;
+                border-radius: 50%;
+            }
+        }
+    }
+}

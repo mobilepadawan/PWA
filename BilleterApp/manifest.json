@@ -1,0 +1,18 @@
+{
+    "name": "BilleterApp",
+    "short_name": "BilleterApp",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "lang": "es-AR",
+    "orientation": "portrait-primary",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "images/wallet-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+@import url('/css/varsandgeneral.css');
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+        font-size: var(--logo-size);
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 4px;
+        margin-bottom: 0;
+        color: var(--texto-secundario);
+    }
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-login {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: var(--texto-normal);
+    }
+
+    .bottom-messages {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        & div {
+            width: 50%;
+
+            & p {
+                cursor: pointer;
+            }
+        }
+
+        & div:first-child {
+            text-align: left;
+
+            & p {
+                color: var(--texto-normal);
+            }
+        }
+
+        & div:last-child {
+            text-align: right;
+
+            & p {
+                color: var(--texto-primario);
+            }
+        }
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: var(--texto-primario);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 40px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type="email"], 
+        input[type="password"] {
+            outline: none;
+        }
+
+        button[type="submit"] {
+            border: 0;
+            padding: 16px;
+            color: white;
+            font-size: var(--texto-size);
+            background-color: var(--boton-primario);
+            border-radius: 4px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--boton-primario-hover);
+
+        }
+
+        button[type="submit"]:active {
+            background-color: var(--boton-primario-active);
+        }
+    }
+}
+

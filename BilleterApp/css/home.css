@@ -1,0 +1,176 @@
+@import url('/css/varsandgeneral.css');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .main-home {
+        margin-top: 10px;
+        width: 330px;
+        max-width: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & .greetings {
+            display: inline;
+        }
+        
+        & .greetings p, 
+        & .greetings span {
+            color: var(--texto-primario);
+        }
+    }
+    
+    .card-money {
+        width: 100%;
+        max-width: 300px;
+        height: 140px;
+        background: linear-gradient(135deg, 
+                                    var(--card-color-superior), 
+                                    var(--card-color-medio), 
+                                    var(--card-color-inferior));
+        padding: 16px;
+        border-radius: 8px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        & hr {
+            margin-top: -5px;
+            width: 100%;
+            border: 0.5px solid whitesmoke;
+        }
+        
+        & .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        & .card-header span {
+            font-size: var(--texto-size);
+            margin-right: 8px;
+        }
+        
+        & .card-header img {
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+            filter: invert(100%);
+        }
+        
+        & .card-amount {
+            font-size: 2rem;
+        }
+    }
+
+    .container-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-evenly;
+        gap: 5px;
+        max-width: 340px;
+        margin: 0 auto;
+        padding-top: 16px;
+    
+        & div.button {
+            width: calc(33.3% - 10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 2px;
+            background-color: var(--boton-primario);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 8px;
+            transition: background-color 0.3s ease;
+        }
+    
+        & .button img {
+            width: 32px;
+            height: 32px;
+            padding: 6px;
+            filter: invert(100);
+            margin-bottom: 4px;
+        }
+        
+        & .button span {
+            font-size: 0.7rem;
+            color: var(--texto-secundario);
+            margin-bottom: 6px;
+        }
+    
+        & div.button:hover {
+            background-color: var(--boton-primario-hover);
+        }
+    
+        & div.button:active {
+            background-color: var(--boton-primario-active);
+        }
+    }
+
+    div.movs {
+        padding: 16px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: calc(100vh - var(--offset-top, 0px));
+        
+        & p {
+            color: var(--texto-primario);
+            margin-bottom: 16px;
+        }
+        
+        & .row-mov {
+            display: block;
+            width: 340px;
+            height: 74px;
+            border-top: 1px solid lightgray;
+
+            & p#mov-date {
+                font-size: .8rem;
+                color: var(--texto-secundario);
+                margin-bottom: 10px;
+            }
+            
+            & .detail-money {
+                display: inline;
+                
+                & .mov-detail {
+                    float: left;
+                    color: var(--texto-normal);
+                }
+
+                & .mov-momey {
+                    float: right;
+                }
+
+                & .mov-money-positive {
+                    color: var(--money-color-positive);
+                }
+
+                & .mov-money-negative {
+                    color: var(--money-color-negative);
+                }
+            }
+        }
+    }
+}
